@@ -31,6 +31,8 @@ class Price
 		@price_str = price
 	end
 
+	# This function doesn't work correctly.
+	# It should provide information when price is changed.
 	def changed?
 		changed = (@price_new != @price_old)
 		@price_old = @price_new
